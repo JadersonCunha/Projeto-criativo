@@ -257,7 +257,7 @@ header nav ul li:hover::after {
 
 .indicators {
     position: absolute;
-    bottom: 60px;
+    bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -348,7 +348,6 @@ header nav ul li:hover::after {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    z-index: 6; /* Garante que o footer fique acima dos outros elementos */
 }
 
 .social-icons a {
@@ -369,7 +368,6 @@ header nav ul li:hover::after {
 }
 
 
-/* MEDIA QUERIES */
 @media screen and (max-width: 1024px) {
     header {
         padding: 20px 30px;
