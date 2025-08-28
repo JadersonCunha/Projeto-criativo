@@ -16,6 +16,10 @@ body {
   flex-direction: column;
 }
 
+body::-webkit-scrollbar {
+      display: none;
+    }
+
 header {
     position: fixed;
     width: 90vw;
@@ -346,7 +350,7 @@ header nav ul li:hover::after {
 }
 
 .footer{
-    background-color: linear-gradient(95deg, #00f7ff, #0066ff);
+    
     color: #fff;
     text-align: center;
     padding: 20px 0;
