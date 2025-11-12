@@ -97,10 +97,34 @@ header nav ul {
     text-align: center;
 }
 
+.mobile-menu ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 5px 0;
+}
+
 .mobile-menu ul li a {
+    color: #fff;
+    text-decoration: none;
     font-size: 1.2rem;
     padding: 10px;
     display: block;
+}
+
+.mobile-menu ul li::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #00f7ff;
+    transition: width 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.mobile-menu ul li:hover::after {
+    width: 80%;
 }
 
 header nav ul li {
@@ -508,11 +532,16 @@ header nav ul li:hover::after {
         font-size: 0.9rem;
     }
     .btn {
+        position: fixed;
+        top: 120px;
+        right: 20px;
         padding: 10px 14px;
         font-size: 0.9rem;
+        z-index: 500;
     }
     .indicators {
-        bottom: 80px;
+        top: 120px;
+        bottom: auto;
     }
     .numbers {
         font-size: 2rem;
@@ -558,11 +587,16 @@ header nav ul li:hover::after {
         font-size: 0.85rem;
     }
     .btn {
+        position: fixed;
+        top: 100px;
+        right: 15px;
         padding: 8px 12px;
         font-size: 0.8rem;
+        z-index: 500;
     }
     .indicators {
-        bottom: 90px;
+        top: 100px;
+        bottom: auto;
     }
     .footer p {
         font-size: 0.6rem;
