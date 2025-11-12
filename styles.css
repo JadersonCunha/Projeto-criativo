@@ -13,6 +13,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 
@@ -154,14 +155,14 @@ header nav ul li:hover::after {
 }
 
 .container {
-    min-height: calc(100vh - 60px);
+    min-height: 100vh;
+    width: 100vw;
     position: relative;
     background: linear-gradient(135deg, #0f0f1e 0%, #1f1f3a 100%);
     flex: 1;
     display: flex;
     align-items: center;
     margin-bottom: 60px;
-    overflow: visible;
 }
 
 .container::before {
@@ -509,6 +510,9 @@ header nav ul li:hover::after {
 }
 
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
     .logo {
         font-size: 1.5rem;
     }
@@ -521,6 +525,8 @@ header nav ul li:hover::after {
     .container {
         padding-top: 100px;
         margin-bottom: 70px;
+        width: 100vw;
+        min-height: 100vh;
     }
     .item {
         gap: 20px;
@@ -534,12 +540,12 @@ header nav ul li:hover::after {
     }
     .btn {
         position: fixed !important;
-        top: 20px !important;
-        right: 20px !important;
+        top: 0 !important;
+        right: 0 !important;
         padding: 8px 12px !important;
         font-size: 0.8rem !important;
-        z-index: 1001 !important;
-        margin-top: 0 !important;
+        z-index: 9999 !important;
+        margin: 5px !important;
     }
     .indicators {
         top: 120px;
@@ -577,6 +583,8 @@ header nav ul li:hover::after {
     .container {
         padding-top: 80px;
         margin-bottom: 70px;
+        width: 100vw;
+        min-height: 100vh;
     }
     .item {
         padding: 20px 10px 90px 10px;
@@ -592,12 +600,12 @@ header nav ul li:hover::after {
     }
     .btn {
         position: fixed !important;
-        top: 15px !important;
-        right: 15px !important;
+        top: 0 !important;
+        right: 0 !important;
         padding: 6px 10px !important;
         font-size: 0.75rem !important;
-        z-index: 1001 !important;
-        margin-top: 0 !important;
+        z-index: 9999 !important;
+        margin: 3px !important;
     }
     .indicators {
         top: 100px;
