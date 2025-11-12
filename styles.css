@@ -532,20 +532,21 @@ header nav ul li:hover::after {
         gap: 20px;
         padding: 30px 15px 80px 15px;
     }
+    .item .btn {
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin: 5px;
+        padding: 8px 12px;
+        font-size: 0.8rem;
+        z-index: 9999;
+        margin-top: 0;
+    }
     .product-name {
         font-size: 2rem;
     }
     .description {
         font-size: 0.9rem;
-    }
-    .btn {
-        position: fixed !important;
-        top: 0 !important;
-        right: 0 !important;
-        padding: 8px 12px !important;
-        font-size: 0.8rem !important;
-        z-index: 9999 !important;
-        margin: 5px !important;
     }
     .indicators {
         top: 120px;
@@ -589,6 +590,16 @@ header nav ul li:hover::after {
     .item {
         padding: 20px 10px 90px 10px;
     }
+    .item .btn {
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin: 3px;
+        padding: 6px 10px;
+        font-size: 0.75rem;
+        z-index: 9999;
+        margin-top: 0;
+    }
     .tec-circles {
         display: none;
     }
@@ -597,15 +608,6 @@ header nav ul li:hover::after {
     }
     .description {
         font-size: 0.85rem;
-    }
-    .btn {
-        position: fixed !important;
-        top: 0 !important;
-        right: 0 !important;
-        padding: 6px 10px !important;
-        font-size: 0.75rem !important;
-        z-index: 9999 !important;
-        margin: 3px !important;
     }
     .indicators {
         top: 100px;
