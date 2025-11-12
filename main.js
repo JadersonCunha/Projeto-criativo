@@ -4,6 +4,8 @@ const items = document.querySelectorAll('.item');
 const dots = document.querySelectorAll('.dot');
 const indicators = document.querySelector('.numbers');
 const list = document.querySelector('.list');
+const menuToggle = document.getElementById('menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
 
 let active = 0;
 const itemsLength = items.length;
@@ -43,6 +45,20 @@ nextBtn.addEventListener('click', () => {
 prevBtn.addEventListener('click', () => {
     updateSlider('prev');
     startTimer();
+});
+
+// Menu toggle functionality
+menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+});
+
+// Close menu when clicking on links
+mobileMenu.addEventListener('click', (e) => {
+    if (e.target.tagName === 'A') {
+        menuToggle.classList.remove('active');
+        mobileMenu.classList.remove('active');
+    }
 });
 
 startTimer();
