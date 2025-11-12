@@ -533,11 +533,11 @@ header nav ul li:hover::after {
     }
     .btn {
         position: fixed !important;
-        top: 80px !important;
+        top: 15px !important;
         right: 20px !important;
         padding: 8px 12px !important;
         font-size: 0.8rem !important;
-        z-index: 500 !important;
+        z-index: 1001 !important;
         margin-top: 0 !important;
     }
     .indicators {
@@ -591,11 +591,11 @@ header nav ul li:hover::after {
     }
     .btn {
         position: fixed !important;
-        top: 70px !important;
+        top: 10px !important;
         right: 15px !important;
         padding: 6px 10px !important;
         font-size: 0.75rem !important;
-        z-index: 500 !important;
+        z-index: 1001 !important;
         margin-top: 0 !important;
     }
     .indicators {
