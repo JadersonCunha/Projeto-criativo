@@ -542,6 +542,8 @@ header nav ul li:hover::after {
     .indicators {
         top: 120px;
         bottom: auto;
+        left: 20px;
+        transform: none;
     }
     .numbers {
         font-size: 2rem;
@@ -597,6 +599,8 @@ header nav ul li:hover::after {
     .indicators {
         top: 100px;
         bottom: auto;
+        left: 15px;
+        transform: none;
     }
     .footer p {
         font-size: 0.6rem;
