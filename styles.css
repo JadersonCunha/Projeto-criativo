@@ -533,7 +533,7 @@ header nav ul li:hover::after {
     }
     .btn {
         position: fixed;
-        top: 120px;
+        top: 135px;
         right: 20px;
         padding: 10px 14px;
         font-size: 0.9rem;
@@ -590,7 +590,7 @@ header nav ul li:hover::after {
     }
     .btn {
         position: fixed;
-        top: 100px;
+        top: 115px;
         right: 15px;
         padding: 8px 12px;
         font-size: 0.8rem;
